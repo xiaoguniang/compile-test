@@ -1,9 +1,12 @@
 echo $0
 echo $1
 echo $2
-
-git branch origin/push-test
-git push origin origin/push-test
+echo $3
+echo $4
+echo $5
+exit
+a=$0
+git push -u origin origin/push-test
 
 echo $0
 echo $1
