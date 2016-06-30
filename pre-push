@@ -1,8 +1,15 @@
 echo $0
 echo $1
 echo $2
-echo $local_ref
-echo $local_sha
-echo $remote_ref
-echo $remote_sha
+
+git push origin push-test
+
+echo $0
+echo $1
+echo $2
+
+git fetch push-test origin
+
+echo fetch
+
 exit
