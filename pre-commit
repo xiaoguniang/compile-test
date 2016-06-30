@@ -12,7 +12,7 @@ exec 1>&2
 while read line
 do
 echo $line
-done
+done < 1
 exit
 git checkout -b commit-test
 
