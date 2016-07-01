@@ -1,17 +1,22 @@
+#!/bin/sh
+
+echo $0
 echo $1
 echo $2
 echo $3
 
-echo $PWD/flag.txt
-read path
-if[ -x $path]
-then
-exit 1
-else
-touch $PWD/flag.txt
-git push -u origin push-test
-exit 0
-fi
+git push --no-verify -u origin push-test
+#FILE="flag"
+
+#if [ -f "$FILE" ];then
+#echo "exist"
+#exit 0
+#else
+#echo "no $FILE"
+#touch $FILE
+#git push --no-verify -u origin push-test
+#exit 0
+#fi
 
 exit
 a=$0
