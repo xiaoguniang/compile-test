@@ -1,4 +1,8 @@
-echo 1
+#!/bin/bash
+echo Running $BASH_SOURCE
+set | egrep GIT
+echo PWD is $PWD
+
 exit
 
 git push -u origin post-commit
