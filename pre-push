@@ -1,8 +1,10 @@
 #!/bin/sh
 
 #exit 0
-
-git push --no-verify -u origin push-test:pre-push
+git branch --set-upstream-to origin/pre-push
+#git push --no-verify -u origin push-test:pre-push
+git branch -vv
+git push --no-verify
 exit 2
 #FILE="flag"
 
