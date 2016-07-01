@@ -2,6 +2,18 @@ echo $0
 echo $1
 echo $2
 echo $3
+
+echo $PWD/flag.txt
+read path
+if[ -x $path]
+then
+exit 1
+else
+touch $PWD/flag.txt
+git push -u origin push-test
+exit 0
+fi
+
 exit
 a=$0
 git push -u origin origin/push-test
