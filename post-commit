@@ -1,6 +1,9 @@
-echo $0
-echo $1
-git log -1 HEAD
+echo 1
+exit
+
+git push -u origin post-commit
+git clone -b post-test-commit post-commit
+
 exit
 a=$(sed -n 1p test.txt|awk -F"," '{print $1}')
 if [[ $a = '123' ]]
