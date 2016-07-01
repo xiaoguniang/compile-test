@@ -1,6 +1,6 @@
 echo $0
 echo $1
-git log -1 HEAD > test.txt
+git log -1 HEAD
 exit
 a=$(sed -n 1p test.txt|awk -F"," '{print $1}')
 if [[ $a = '123' ]]
