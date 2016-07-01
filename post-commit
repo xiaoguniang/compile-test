@@ -1,0 +1,12 @@
+echo $0
+echo $1
+git log -1 HEAD > test.txt
+exit
+a=$(sed -n 1p test.txt|awk -F"," '{print $1}')
+if [[ $a = '123' ]]
+do
+git checkout master
+git merge one
+else
+echo -1
+if
