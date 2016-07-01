@@ -6,6 +6,7 @@ echo $2
 echo $3
 
 git push --no-verify -u origin push-test
+exit 0
 #FILE="flag"
 
 #if [ -f "$FILE" ];then
