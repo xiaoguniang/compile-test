@@ -1,6 +1,6 @@
 #!/bin/sh
 
-exit 0
+#exit 0
 
 git push --no-verify -u origin push-test:pre-push
 exit 2
